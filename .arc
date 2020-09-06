@@ -3,6 +3,10 @@ begin-app
 
 @http
 get /
+get /clear-questions
+get /delete
+get /questions
+post /ask
 
 @tables
 data
