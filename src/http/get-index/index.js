@@ -12,10 +12,10 @@ let body = `
     <meta charset=utf-8>
     <title>Hi!</title>
     <script type="module">
-      import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@bniedermeyer/q-and-a/loader/index.es2017.js';
+      import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@cascadiajs/q-and-a/loader/index.es2017.js';
       defineCustomElements(); 
     </script>
-    <script nomodule src='https://unpkg.com/@bniedermeyer/q-and-a/dist/q-and-a/q-and-a.js'></script>
+    <script nomodule src='https://unpkg.com/@cascadiajs/q-and-a/dist/q-and-a/q-and-a.js'></script>
   </head>
   <body>
   <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
