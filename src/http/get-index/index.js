@@ -12,13 +12,16 @@ let body = `
     <meta charset=utf-8>
     <title>Hi!</title>
     <script type="module">
-    import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@bniedermeyer/q-and-a/loader/index.es2017.js';
-    defineCustomElements(); 
-  </script>
+      import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@bniedermeyer/q-and-a/loader/index.es2017.js';
+      defineCustomElements(); 
+    </script>
+    <script nomodule src='https://unpkg.com/@bniedermeyer/q-and-a@0.0.4/dist/q-and-a/q-and-a.js'></script>
   </head>
   <body>
   <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+  
   <h1>Q&A Demo</h1>
+
   <q-and-a user-id="my-user" correlation-id="my-id"></q-and-a>
   
   </div>
