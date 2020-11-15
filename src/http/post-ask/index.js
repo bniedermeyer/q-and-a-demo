@@ -26,10 +26,11 @@ async function ask(req) {
 
       if (key) {
         const votedQuestion = await data.get({ table: "questions", key });
-        if (votedQuestion.upvotedBy.includes(userId)) {
-          console.info(`user ${userId} already voted for ${key}`);
-          return { statusCode: 200 };
-        }
+        //this code could be used to prevent users spammin question upvotes
+        // if (votedQuestion.upvotedBy.includes(userId)) {
+        //   console.info(`user ${userId} already voted for ${key}`);
+        //   return { statusCode: 200 };
+        // }
 
         await data.set({
           ...votedQuestion,
