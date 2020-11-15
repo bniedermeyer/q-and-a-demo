@@ -3,6 +3,7 @@
 
 // Add secure sessions, middleware, and more: https://docs.begin.com/en/functions/http/
 // let arc = require('@architect/functions')
+const { v4: uuidv4 } = require("uuid");
 
 // TODO: modify the body object!
 let body = `
@@ -22,7 +23,7 @@ let body = `
 
   <h1>Q&A Demo</h1>
 
-  <q-and-a user-id="my-user" correlation-id="my-id"></q-and-a>
+  <q-and-a user-id="my-user${uuidv4()}" correlation-id="my-id"></q-and-a>
   
   </div>
 
